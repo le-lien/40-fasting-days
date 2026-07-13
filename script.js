@@ -90,10 +90,7 @@ function buildDayList() {
     button.type = "button";
     button.className = "day-button";
     button.dataset.day = day.number;
-    button.innerHTML = `
-      <span class="day-number">${day.label}</span>
-      <span class="day-state">Open</span>
-    `;
+    button.innerHTML = `<span class="day-number">${day.label}</span>`;
     button.addEventListener("click", () => loadDay(day));
     fragment.appendChild(button);
   });
