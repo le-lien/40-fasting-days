@@ -3,22 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fasting & Prayers</title>
+    <title>40 Days Fasting & Prayers</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main class="reader-shell">
       <aside class="day-list" aria-label="Days">
         <div class="list-heading">
-          <p>40 Days</p>
-          <h1>Fasting & Prayers</h1>
+          <p id="programLabel">40 Days</p>
+          <h1 id="siteTitle">Fasting & Prayers</h1>
         </div>
         <nav id="dayNav" class="day-nav" aria-label="Prayer days"></nav>
       </aside>
 
       <section class="content-panel" aria-live="polite">
         <div class="content-heading">
-          <h2 id="dayTitle">Day 1</h2>
+          <div class="content-topline">
+            <h2 id="dayTitle">Day 1</h2>
+            <div class="language-switcher" aria-label="Language">
+              <button class="language-button active" type="button" data-language="en" aria-label="English" title="English">
+                <span class="flag-icon flag-en" aria-hidden="true"></span>
+                <span class="language-name">English</span>
+              </button>
+              <button class="language-button" type="button" data-language="de" aria-label="Deutsch" title="Deutsch">
+                <span class="flag-icon flag-de" aria-hidden="true"></span>
+                <span class="language-name">Deutsch</span>
+              </button>
+              <button class="language-button" type="button" data-language="vn" aria-label="Vietnamese" title="Vietnamese">
+                <span class="flag-icon flag-vn" aria-hidden="true"></span>
+                <span class="language-name">Vietnamese</span>
+              </button>
+            </div>
+          </div>
         </div>
         <article id="dayContent" class="day-content"></article>
       </section>
